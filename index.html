@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Lucas Lupo</title>
+
+    <!-- Imagen -->
+    <link rel="shortcut icon" href="./img/logo.png">
+  </head>
+  <!---------------------------------------------------------------------------- BODY:HEADER ---------------------------------------------------------------------------->
+
+  <body class="" id="otro">
+    <header class="header backgroundBlack">
+      <div class="headerDiv1">
+        <div class="headerSub1">
+          <div class="d-flex flex-row justify-content-end headerSub1-1 headerFont animate__animated animate__fadeInDown">
+            <div>
+              <a href="#home">//home</a>
+            </div>
+            <div>
+              <a href="#portfolio">//portfolio</a>
+            </div>
+            <div>
+              <a href="#downloads">//downloads</a>
+            </div>
+            <div>
+              <a href="#aboutme">//about me</a>
+            </div>
+          </div>
+        </div>
+        <div class="headerSub2">
+          <div class="d-flex justify-content-center">
+            <div class="css-typing headerSub2-1">
+              <p class="headerFont">
+                GRAPHIC DESIGNER
+              </p>
+              <p class="headerFont">
+                BASED IN BARCELONA.
+              </p>
+              <p class="headerFont">
+                LUCAS LUPO
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="headerSub3">
+          <div class="d-flex">
+            <div class="signature headerSub2-2">
+              <!-- <video id="signatureBg" class="signatureBg" width="320" height="176" autoplay>
+                <source src="/img/signature2.mp4" type="video/mp4">
+                <source src="/img/signature2.mp4" type="video/ogg">
+                Your browser does not support HTML5 video.
+              </video> -->
+            </div>
+          </div>
+        </div>
+        <div class="headerSub4">
+          <div class="d-flex justify-content-center" style="margin-bottom: 50px;">
+            <!-- <a href="#firsts" onclick="upper()" class="glower">Show my reel</a> -->
+            <button onclick="upper()" class="btn headerFont"
+              style="color: #04f502; border: 1px solid #04f502; outline: 0;">Show my reel</button>
+          </div>
+          <div>
+            <div class="d-flex ">
+              <div class="arrow">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <!---------------------------------------------------------------------------- BODY: VERTICAL NAVBAR ---------------------------------------------------------------------------->
+    <div class="div2 bodyBg" id="div2" style=" width: 100%;">
+      <div class="logo menu-logo bodyBg" id="homeLogo">
+        <a href="">
+          <img src="./img/logo.png" alt="" class="responsive2 bodyBg">
+        </a>
+      </div>
+      <div class="sidebar bodyBg ">
+        <a class="bodyColor" class="" href="#home" id="sideBarHomeEffect"style="border-left: 5px solid #04f502;">HOME</a>
+        <a class="bodyColor" href="#portfolio" id="sideBarPortfolioEffect">PORTFOLIO</a>
+        <a class="bodyColor" href="#downloads" id="sideBarDownloadsEffect">DOWNLOADS</a>
+        <a class="bodyColor" href="#aboutme" id="sideBarAboutmeEffect">ABOUT ME</a>
+      </div>
+
+      <!---------------------------------------------------------------------------- BODY: CONTENT ----------------------------------------------------------------------------------->
+      <div class="space bodyBg"></div>
+      <div class="content">
+        <div id="home">
+          <img src="./img/home.png" alt="" class="responsive">
+        </div>
+        <!---------------------------------------------------------------------------- BODY: PORTFOLIO ---------------------------------------------------------------------------------->
+        <div id="portfolio">
+          <section id="work">
+            <div class="cajaWork">
+              <div class="main">
+                <div class="">
+                  <div class="tab">
+                    <div class="tab-menu bodyColor bodyBg">
+                      <button class="tab-menu-link active bodyColor bodyBg" data-content="first">
+                        <span data-title="first">ALL</span>
+                      </button>
+                      <button class="tab-menu-link bodyColor bodyBg" data-content="second">
+                        <span data-title="second">3D-DESIGN</span>
+                      </button>
+                      <button class="tab-menu-link bodyColor bodyBg" data-content="third">
+                        <span data-title="third">VISUAL</span>
+                      </button>
+                      <button class="tab-menu-link bodyColor bodyBg" data-content="fourth">
+                        <span data-title="fourth">GRAPHIC DESIGN</span>
+                      </button>
+                      <button class="tab-menu-link bodyColor bodyBg" data-content="fifth">
+                        <span data-title="fifth">MOTION GRAPHIC</span>
+                      </button>
+                    </div>
+                    <div class="tab-bar bodyColor bodyBg">
+                      <div class="tab-bar-content active bodyColor bodyBg animate__animated animate__fadeIn" id="first">                        
+                        <div class="row">
+                          <div class="col-4 mb-4 mt-5 card_item ">
+                              <a href="#">
+                            <div class="card h-100">
+                              <img src="img/WORK/4- 3D/rendercuadrado_.png" class="card-img-top" alt="...">
+                              <h5 class="card-text">_experimental 00</h5>                              
+                            </div>
+                          </a>
+                        </div>
+                          <div class="col-4 mb-4 mt-5 card_item">
+                            <a href="#">
+                              <div class="card h-100">
+                                <img src="img/WORK/1-Visuales/Flash2.00_00_03_06.Imagen fija009.00_01_02_10.Imagen fija005.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-text">_flash 00</h5>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-4 mb-4 mt-5 card_item">
+                            <a href="#">
+                              <div class="card h-100">
+                                <img src="img/WORK/2-CyberMonday/30a8f565555729.5af8cc1a43ca2.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-text">_cybermonday 00</h5>                              
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-4 mb-4 mt-5 card_item">
+                            <a href="#">
+                              <div class="card h-100">
+                                <img src="img/WORK/6 - Revista vertigo/1-anierto.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-text">_vértigo 00</h5>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-4 mb-4 mt-5 card_item">
+                            <a href="#">
+                              <div class="card h-100">
+                                <img src="img/WORK/3- Eca mendoza/Talleres sistema-01.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-text">_eca 00</h5>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-4 mb-4 mt-5 card_item">
+                            <a href="#">
+                              <div class="card h-100">
+                                <img src="img/WORK//5- Infografia juguetes perdidos/zoom-1.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-text">_juguetes perdidos 00</h5>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-bar-content" id="second">
+                      <div class="col-4 mb-4 mt-5 card_item animate__animated animate__fadeIn">
+                        <a href="#">
+                          <div class="card h-100">
+                            <img src="img/WORK/4- 3D/rendercuadrado_.png" class="card-img-top" alt="...">
+                            <h5 class="card-text">_experimental 00</h5>                          
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="tab-bar-content" id="third">
+                      <div class="col-4 mb-4 mt-5 card_item animate__animated animate__fadeIn">
+                        <a href="#">
+                          <div class="card h-100">
+                            <img src="img/WORK/1-Visuales/Flash2.00_00_46_11.Imagen fija002.jpg" class="card-img-top" alt="...">
+                            <h5 class="card-text">_flash 00</h5>
+                          </div>                         
+                        </a>
+                      </div>
+                    </div>
+                    <div class="tab-bar-content" id="fourth">
+                      <div class="row animate__animated animate__fadeIn">
+                        <div class="col-4 mb-4 mt-5 card_item">
+                          <a href="#">
+                            <div class="card h-100">
+                              <img src="img/WORK/2-CyberMonday/30a8f565555729.5af8cc1a43ca2.jpg" class="card-img-top" alt="...">
+                              <h5 class="card-text">_cybermonday 00</h5>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-4 mb-4 mt-5 card_item">
+                          <a href="#">
+                            <div class="card h-100">
+                              <img src="img/WORK/6 - Revista vertigo/1-anierto.jpg" class="card-img-top" alt="...">
+                              <h5 class="card-text">_vértigo 00</h5>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-4 mb-4 mt-5 card_item">
+                          <a href="#">
+                            <div class="card h-100">
+                              <img src="img/WORK/3- Eca mendoza/Talleres sistema-01.jpg" class="card-img-top" alt="...">
+                              <h5 class="card-text">_eca 00</h5>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-4 mb-4 mt-5 card_item">
+                          <a href="#">
+                            <div class="card h-100">
+                              <img src="img/WORK//5- Infografia juguetes perdidos/zoom-1.jpg" class="card-img-top" alt="...">
+                              <h5 class="card-text">_juguetes perdidos 00</h5>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-bar-content" id="fifth">
+                      <div class="row">
+                        <div class="col-4 mb-4 mt-5 card_item animate__animated animate__fadeIn">
+                          <a href="#">
+                            <div class="card h-100">
+                              <img src="img/WORK/1-Visuales/Flash2.00_00_46_11.Imagen fija002.jpg" class="card-img-top" alt="...">
+                              <h5 class="card-text">_flash 00</h5>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-4 mb-4 mt-5 card_item">
+                          <a href="#">
+                            <div class="card h-100">
+                              <img src="img/WORK/3- Eca mendoza/Talleres sistema-01.jpg" class="card-img-top" alt="...">
+                              <h5 class="card-text">_eca 00</h5>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </select>
+          </div>
+            <script>
+              // Script Responsive Tab
+              const tabLink = document.querySelectorAll(".tab-menu-link");
+              const tabContent = document.querySelectorAll(".tab-bar-content");
+
+              tabLink.forEach((el) => {
+                el.addEventListener("click", activeTab);
+              });
+
+              function activeTab(el) {
+                const btnTarget = el.currentTarget;
+                const content = btnTarget.dataset.content;
+
+                tabContent.forEach((el) => {
+                  el.classList.remove("active");
+                });
+
+                tabLink.forEach((el) => {
+                  el.classList.remove("active");
+                });
+
+                document.querySelector("#" + content).classList.add("active");
+                btnTarget.classList.add("active");
+              }
+            </script>
+          </section>
+        </div>
+        <!---------------------------------------------------------------------------- BODY: DOWNLOADS ---------------------------------------------------------------------------------->
+        <br>
+        <div id="downloads" style="height: 90vh; border: 1px solid yellow;" class="bodyColor bodyBg">
+          <h1 class="text-center">DOWNLOADS//</h1>
+        </div>
+        <!---------------------------------------------------------------------------- BODY: CONTACT/ABOUTME ---------------------------------------------------------------------------------->
+        <br>
+        <div id="aboutme">
+          <div class="d-flex flex-row">
+            <div class="col-4 d-flex justify-content-center" style="z-index: 100;">
+              <div class="card bodyBg">
+                <div class="card-body ">
+                  <h5 class="card-title"
+                    style="color: #04f502; border: 1px solid #04f502; padding: 10px 0 10px 0; text-align: center;">
+                    ABOUT ME</h5>
+                  <p class="card-text bodyColor">
+                    Desde chico me vi envuelto entre la musica y el arte, unos años mas tarde descubrí que podía
+                    fusionar mis dos pasiones.
+                    Por un lado estudio la Licenciatura en Diseño Grafico en la Universidad Argentina de la Empresa,
+                    al mismo tiempo trabajo como artista visual proyectando visuales en recitales y eventos.
+                  </p>
+                  <br>
+                  <br>
+                  <br>
+                  <h5 class="card-title"
+                    style="color: #04f502; border: 1px solid #04f502; padding: 10px 0 10px 0;text-align: center">CV</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 aboutImg d-flex justify-content-center">
+              <img src="./img/66305794_1426505960839493_7151611038942746792_n.jpg" alt="" class="img-fluid" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------------------------------------------------- FOOTER ------------------------------------------------------------------------------------------>
+    <footer class="bodyBg">
+      <div class="redes" >
+        <div class="d-flex flex-column align-items-center">
+          <div class="social-menu" >
+            <div class="social-menu2">
+              <a href="https://open.spotify.com/user/11186091105?si=8f53196bd2ec46b9" target="_blank" class="prevent">
+                <i class="fa fa-spotify"></i>
+              </a>
+            </div>
+            <div class="social-menu2">
+              <a href="https://www.instagram.com/lupo.lucas/" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </div>
+            <div class="social-menu2">
+              <a href="https://www.youtube.com/channel/UC06A7Gd--I7eB-_b6oqCuWw/featured" target="_blank" class="prevent">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div class="">
+            <p style="color: #04f502;">Lucas Lupo</p>
+          </div>
+          <div class="">
+            <a href="mailto:lucaslupo.dg@gmail.com" style="color: #04f502;">LucasLupo.Dg@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="gb d-flex align-items-center ">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <p>© 2021 | Powered by <strong><a href="https://www.coderhouse.com/"
+                  target="_blank">Coder House</a></strong> & <strong><a href="https://www.coderhouse.com/proyectos"
+                    target="_blank" class="yourLink" >#Nerds4ever</a></strong></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script src="app.js"></script>
+  </body>
+
+</html>
