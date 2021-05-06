@@ -8,7 +8,6 @@
   
   .arrow{
     position: absolute;
-
     /* top: 50%; */
     left: 50.5%; 
     transform: translate(-50%,-50%);
@@ -427,11 +426,11 @@ color: #04f502 !important;
   height: 300px;
 }
 .card_item div{
-  border: solid 2px rgb(9, 255, 0)!important ;
+  border: solid 2px #04f502!important ;
   background-color:rgb(16, 19, 16);
 }
 .card_item img{
-  border-bottom: solid 2px rgb(9, 255, 0) !important;
+  border-bottom: solid 2px #04f502 !important;
   object-fit: cover;
   width: 100%;
   height: 80%;
@@ -444,6 +443,111 @@ color: #04f502 !important;
   align-items: center;
   margin-top: 20px;
 }
+
+/*  WORKS:CARRUSEL ----------------------------------------------------------------------------------------------------------*/
+
+.carrusel{
+  margin: 0 auto 15px auto;
+}
+
+.carousel-fade .carousel-item{
+  display: flex;
+  justify-content: center;
+}
+.carousel-item{
+  height: 400px;
+}
+
+.img__gal{
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 20px;
+  height: 20px;
+  top: calc(50% - 25px);
+  margin: 10px;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  color: #1eff00;
+  font-size: 40px;
+}
+
+.close{
+  text-align: center;
+}
+
+.descripcion{
+  border: solid 2px rgb(30, 255, 0);
+  margin: 10px;
+  padding: 15px;
+}
+
+
+
+
+
+/*  DOWNLOADS ----------------------------------------------------------------------------------------------------------*/
+
+.galeria{
+  display: flex;
+  flex-flow: wrap row;
+  margin: 10px 0 10px 0;
+}
+
+.galeria img{
+  height: 250px;
+  padding: 10px;
+}
+
+.light-box{
+  position: fixed;
+  top:0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: transform 0.4s ease-in-out ;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+}
+
+.light-box img{
+  height: 85vh;
+}
+
+.light-box .btnBox{
+  display: flex;
+  flex-direction: row;
+}
+
+.light-box .btnBox a{
+  border: solid 2px #04f502;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.light-box .btnBox a h6{
+  margin: 0;
+  width: 150px;
+  text-align: center;
+  color: #04f502;
+}
+
+.light-box:target{
+  transform: scale(1);
+}
+
 
 /*  CONTENT-------------------------------------------------------------------------------------------------------------*/
 body {
@@ -504,6 +608,7 @@ div.content {
   width: 100%;
   height: auto;
   margin-bottom: 25px;
+  border: solid 2px  #04f502;
 }
 .responsive2 {
   /* width: 100%; */
@@ -706,6 +811,7 @@ div.content {
 } */
 
 .aboutImg img{
+  position: relative;
   object-fit: cover;
   height: 650px;
 }
@@ -739,8 +845,8 @@ div.content {
   /* linear-gradient(to right, black, black, black, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 85, 0)); */
 }
 .gb p {
-  margin: 0px;
-  color: rgb(158, 190, 158) !important;
+  text-align: center;
+  color: #9ebe9e !important;
 }
 .gb p strong a {
   color: inherit;
@@ -751,20 +857,35 @@ div.content {
 .gb p strong:hover {
   color: yellow;
 }
+
+.mail a{
+  font-size: 1.2rem; 
+  text-decoration: none; 
+  margin-top: 30px;
+  color: #9ebe9e;
+}
+
+.mail a:hover{
+  color: #04f502;
+}
+
 .redes{
-  /* margin-top: 30px; */
   display: flex;
-  justify-content: center !important;
-  /* margin-left: 200px;
-  padding-left: 3%; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.redes div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .redes .social-menu {
-  width: 100%;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
-  padding-bottom: 30px;
+  flex-direction: row;
+  margin: 0 0 0 30px;
 }
 .redes .social-menu .social-menu2 {
   list-style: none;
@@ -790,7 +911,7 @@ div.content {
   text-align: center;
   transition: 0.5s;
   transform: translate(0, 0px);
-  box-shadow: 0px 7px 5px rgb(158, 190, 158);
+  box-shadow: 0px 7px 5px #9ebe9e;
   /* animation: glow2 2s ease-in-out infinite alternate; */
 }
 @-webkit-keyframes glow2 {
@@ -805,9 +926,3 @@ div.content {
 .redesS{
   padding: 100px !important;
 }
-
-.footerC{
-    /* border:1px solid red; */
-    background-image: linear-gradient(to right, black, black, black, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 85, 0)) !important;
-}
-
