@@ -46,7 +46,7 @@
 /* DEMO-SPECIFIC STYLES */
 .css-typing p {
   border-right: .15em solid #04f502;
-  font-family: "Courier";
+  font-family: 'Roboto', sans-serif;
   font-size: 50px !important;
   white-space: nowrap;
   overflow: hidden;
@@ -191,8 +191,8 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .backgroundBlack{
   /* background-color: black; */
-  background-image: linear-gradient(to right, #03fe02, #08cd21, #159d27, #1b7025, #1b461f, #19341b, #162316, #101310, #101310, #101310, #101310, #101310);
-  
+  background: rgb(16,19,16);
+  background: linear-gradient(90deg, rgba(16,19,16,1) 85%, rgba(78,255,0,1) 100%);
 }
 .headerFont{
   font-size: 20px !important;
@@ -433,6 +433,11 @@ color: #04f502 !important;
   object-fit: cover;
   width: 100%;
   height: 80%;
+  transition: .4s ease-in-out;
+}
+
+.card_item img:hover{
+  filter: contrast(0.5);
 }
 
 .card_item h5{
@@ -477,7 +482,7 @@ color: #04f502 !important;
 }
 
 .close{
-  text-align: center;
+  text-align: end;
 }
 
 .descripcion{
@@ -517,6 +522,11 @@ color: #04f502 !important;
 .galeria img{
   height: 250px;
   padding: 10px;
+  transition: .4s ease-in-out;
+}
+
+.galeria img:hover {
+  filter: opacity(.5);
 }
 
 .light-box{
@@ -673,18 +683,21 @@ div.content {
     width: auto;
     height: 30px;
   }
+
   .logo{
     top: 0;
     
   }
+
   #home{
     height: auto;
   }
+
   .responsive2{
     height: 50px;
     display: none;
-
   }
+
   .sidebar {
     width: 100%;
     padding-top: 2% 0% 2% 0%;
@@ -747,7 +760,6 @@ div.content {
     /* border-left: 3px solid red; */
     
   }
-
 
 @media screen and (orientation:landscape) and (max-height: 400px) {
   .headerSub1{
@@ -824,6 +836,7 @@ div.content {
   background-size: auto;
 } */
 
+
 .aboutImg img{
   position: relative;
   object-fit: cover;
@@ -832,7 +845,9 @@ div.content {
 
 .card-body{
   font-weight: 300;
+  padding: 0;
 }
+
 .hero-text {
   text-align: center;
   position: absolute;
@@ -851,11 +866,11 @@ div.content {
 
 
 
+
 /*FIRMA*/
 
 .gb {
   height: 50px;
-  background: linear-gradient(to right, black, rgb(0, 85, 0), black, rgb(0, 85, 0));
   /* linear-gradient(to right, black, black, black, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 85, 0)); */
 }
 .gb p {
@@ -874,9 +889,9 @@ div.content {
 
 .mail a{
   font-size: 1.2rem; 
-  text-decoration: none; 
-  margin-top: 30px;
+  text-decoration: none;
   color: #9ebe9e;
+  margin-bottom: 10px;
 }
 
 .mail a:hover{
@@ -887,19 +902,20 @@ div.content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .redes div{
   display: flex;
-  flex-direction: row;
+  flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .redes .social-menu {
   display: flex;
   flex-direction: row;
-  margin: 0 0 0 30px;
+  padding-bottom: 20px;
 }
 .redes .social-menu .social-menu2 {
   list-style: none;
