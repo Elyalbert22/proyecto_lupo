@@ -477,10 +477,15 @@ color: #04f502 !important;
   flex-flow: wrap row;
   margin: 10px 0 10px 0;
 }
+.imagen11{
+  width: 300px;
+  object-fit: cover;
+}
 .galeria img{
   height: 250px;
-  padding: 10px;
+  margin: 7px;
   transition: .4s ease-in-out;
+  border: solid 2px #04f502;
 }
 .galeria img:hover {
   filter: opacity(.5);
@@ -489,7 +494,7 @@ color: #04f502 !important;
   position: fixed;
   top:0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.2);
   transition: transform 0.4s ease-in-out ;
   width: 100%;
   height: 100vh;
@@ -509,6 +514,7 @@ color: #04f502 !important;
 }
 .light-box .btnBox a{
   border: solid 2px #04f502;
+  background-color: #101310;
   margin: 10px;
   padding: 10px;
   text-decoration: none;
